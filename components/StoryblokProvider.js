@@ -1,11 +1,11 @@
 "use client";
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
 
-import CallToAction from "../components/blocks/CallToAction";
-import Catalog from "../components/blocks/Catalog";
-import Page from "../components/content-types/Page";
-import PersonalizedContent from "../components/blocks/PersonalizedContent";
-import RichText from "../components/blocks/RichText";
+import CallToAction from "./blocks/CallToAction";
+import Catalog from "./blocks/Catalog";
+import Page from "./content-types/Page";
+import PersonalizedContent from "./blocks/PersonalizedContent";
+import RichText from "./blocks/RichText";
 
 const components = {
   call_to_action: CallToAction,
