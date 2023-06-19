@@ -7,6 +7,8 @@ const Footer = () => {
       <div className="flex items-center my-8">
         <Image
           src="https://a.storyblok.com/f/51376/3856x824/fea44d52a9/colored-full.png"
+          width={3856}
+          height={824}
           alt="Storyblok Logo"
           className="w-48 m-4"
         />

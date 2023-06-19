@@ -1,21 +1,17 @@
 import { getStoryblokApi } from "@storyblok/react/rsc";
-import { getCookie, setCookie } from "react-use-cookie";
 
 import Catalog from "../../../components/blocks/Catalog";
 
 export default async function CatalogPage({ params }) {
-  const category = params.id;
-  const products = await fetchData(category);
+  const category = params.id ? params.id.join("/") : "";
 
-  if (!getCookie("user_type") && category) {
-    setCookie("user_type", category);
-  }
+  const products = await fetchData(category);
 
   return (
     <main>
       <h1 className="text-4xl mt-[30px] font-bold text-center">{category}</h1>
       <div>
-        <Catalog products={products} />
+        <Catalog products={products} category={category} />
       </div>
     </main>
   );

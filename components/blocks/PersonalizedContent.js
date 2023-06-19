@@ -1,5 +1,7 @@
+"use client";
+
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react/rsc";
-import { getCookie } from "react-use-cookie";
+import { getCookie } from "cookies-next";
 
 const PersonalizedContent = ({ blok }) => {
   const user_type = getCookie("user_type") || "";

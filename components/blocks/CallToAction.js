@@ -18,7 +18,9 @@ const CallToAction = ({ blok }) => {
         <div className="flex-none w-1/3 relative">
           <Image
             src={`${blok.image.filename}/m/500x300/smart/`}
-            alt={blok.image.alt}
+            width={500}
+            height={300}
+            alt={blok.image?.alt}
             className="h-[200px] w-full object-cover"
           />
         </div>

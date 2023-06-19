@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@storyblok/react": "^2.1.5",
+    "cookies-next": "^2.1.2",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "storyblok-rich-text-react-renderer": "^2.6.1"
   },
   "devDependencies": {
